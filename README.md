@@ -3,7 +3,7 @@
 A Bloc Flutter application to be template for user authentication by Firebase's email, Googgle, Facebook login.
 
 ## Getting Started
-# Set up Bloc project:
+### Set up Bloc project:
 1) Create new simple Counter Flutter project.
 2) Import necessary bloc library in pubspec.yaml
 3) Create Event files.
