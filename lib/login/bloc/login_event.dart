@@ -7,6 +7,8 @@ part of 'login_bloc.dart';
 //
 //  LoginWithGooglePressed - notifies the bloc that the user has pressed the Google Sign In button
 //
+//  LoginWithFacebookPressed - notifies the bloc that the user has pressed the Facebook Sign In button
+//
 //  LoginWithCredentialsPressed - notifies the bloc that the user has pressed the regular sign in button.
 
 abstract class LoginEvent extends Equatable {
@@ -41,6 +43,8 @@ class LoginPasswordChanged extends LoginEvent {
 }
 
 class LoginWithGooglePressed extends LoginEvent {}
+
+class LoginWithFacebookPressed extends LoginEvent {}
 
 class LoginWithCredentialsPressed extends LoginEvent {
   final String email;

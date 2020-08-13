@@ -44,6 +44,7 @@ class _LoginFormState extends State<LoginForm> {
   Widget build(BuildContext context) {
     return BlocListener<LoginBloc, LoginState>(
       listener: (context, state) {
+        print('In listening... state[${state}]');
         if(state.isFailure) {
           Scaffold.of(context)
             ..hideCurrentSnackBar()
@@ -70,6 +71,7 @@ class _LoginFormState extends State<LoginForm> {
             );
         }
         if(state.isSuccess) {
+          print('state.isSuccess!!');
           BlocProvider.of<AuthenticationBloc>(context).add(AuthenticationLoggedIn());
         }
       },
@@ -82,7 +84,7 @@ class _LoginFormState extends State<LoginForm> {
                 children: [
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 20),
-                    child: Image.asset('assets/flutter_logo.png', height: 200),
+                    child: Image.asset('assets/flutter_logo.png', height: 100),
                   ),
                   TextFormField(
                     controller: _emailController,
@@ -121,6 +123,7 @@ class _LoginFormState extends State<LoginForm> {
                               : null,
                         ),
                         GoogleLoginButton(),
+                        FacebookLoginButton(),
                         CreateAccountButton(userRepository: _userRepository),
                       ],
                     ),
