@@ -6,14 +6,25 @@ Add Bloc Flutter application to be template for user authentication by Facebook 
 ### Set up Bloc project:
 1) From master branch.
 2) Set up flutter_login_facebook library in pubspec.yaml
-3) Create Package.
-3) Create Repository files.
-4) Create Event files.
+  - Found error after try to build:
+  com.android.builder.dexing.DexArchiveMergerException: Error while merging dex archives: 
+  The number of method references in a .dex file cannot exceed 64K.
+  - Solution: Edit android/app/build.gradle by
+    - add 
+      defaultConfig {
+        multiDexEnabled true
+    - add 
+      dependencies {
+        implementation 'com.android.support:multidex:1.0.3'
+  
+3) Create Event files.
 5) Create State files.
 6) Create Bloc files
 7) Create Barrel files.
 8) Create UI Page files.
 9) Create UI Widgets files.
+3) Create Repository files.
+
 10) Create Bloc Observer file.
 11) Create main.dart with 
   - WidgetsFlutterBinding.ensureInitialized()
