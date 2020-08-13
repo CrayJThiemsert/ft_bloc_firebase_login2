@@ -1,11 +1,11 @@
-# ft_bloc_firebase_login2
+# flutter_login_facebook Implementation
 
-A Bloc Flutter application to be template for user authentication by Firebase's email, Googgle, Facebook login.
+Add Bloc Flutter application to be template for user authentication by Facebook login.
 
 ## Getting Started
 ### Set up Bloc project:
-1) Create new simple Counter Flutter project.
-2) Set up necessary bloc library in pubspec.yaml
+1) From master branch.
+2) Set up flutter_login_facebook library in pubspec.yaml
 3) Create Package.
 3) Create Repository files.
 4) Create Event files.
