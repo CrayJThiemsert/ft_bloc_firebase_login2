@@ -23,7 +23,7 @@ A Bloc Flutter application to be template for user authentication by Firebase's 
 
 
 A few resources to get you started if this is your first Flutter project:
-- [https://bloclibrary.dev/#/flutterfirebaselogintutorial](https://bloclibrary.dev/#/flutterfirebaselogintutorial)
+- [Good practice for Bloc study](https://bloclibrary.dev/#/flutterfirebaselogintutorial)
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
